@@ -13,7 +13,8 @@
     "precommit": "npm run lint",
     "prepackage-functions": "rimraf functions",
     "package-functions": "babel 'functionsES6' --out-dir 'functions' --copy-files --ignore 'node_modules'",
-    "postpackage-functions": "cp -R .nuxt nuxt.config.js functions/ && cd functions && yarn"
+    "postpackage-functions": "cp -R .nuxt nuxt.config.js functions/ && cd functions && yarn",
+    "push": "yarn generate && yarn build && firebase deploy"
   },
   "dependencies": {
     "bootstrap-vue": "^2.0.0-rc.8",
