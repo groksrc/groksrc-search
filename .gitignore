@@ -1,0 +1,8 @@
+.DS_Store
+.firebaserc
+.nuxt
+.vscode
+dist
+functions
+node_modules
+yarn-error.log

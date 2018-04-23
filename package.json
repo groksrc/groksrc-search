@@ -1,0 +1,30 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "groksrc nuxt",
+  "author": "Drew Cain <groksrc@pm.me>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "prepackage-functions": "rimraf functions",
+    "package-functions": "babel 'functionsES6' --out-dir 'functions' --copy-files --ignore 'node_modules'",
+    "postpackage-functions": "cp -R .nuxt nuxt.config.js functions/ && cd functions && yarn"
+  },
+  "dependencies": {
+    "nuxt": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}
