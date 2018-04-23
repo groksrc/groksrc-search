@@ -16,6 +16,7 @@
     "postpackage-functions": "cp -R .nuxt nuxt.config.js functions/ && cd functions && yarn"
   },
   "dependencies": {
+    "bootstrap-vue": "^2.0.0-rc.8",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {
