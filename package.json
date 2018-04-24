@@ -4,6 +4,7 @@
   "description": "groksrc nuxt",
   "author": "Drew Cain <groksrc@pm.me>",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
