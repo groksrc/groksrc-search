@@ -25,7 +25,7 @@ export default {
         },
         {
           title: "Drew Cain is on Twitter",
-          desc: "",
+          desc: "The latest Tweets from Drew Cain (@GrokSrc)",
           url: "https://www.twitter.com/groksrc"
         },
         {
