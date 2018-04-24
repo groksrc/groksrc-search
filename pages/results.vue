@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   nav.navbar.navbar-expand-lg.navbar-light.bg-light
-    a.navbar-brand(href='/') groksrc search | home
+    a.navbar-brand(href='/') groksrc search
 
   .row(v-for="result in results" :key="result.title")
     .col
@@ -38,3 +38,8 @@ export default {
   }
 }
 </script>
+<style>
+a:hover.navbar-brand {
+  text-decoration: underline;
+}
+</style>
