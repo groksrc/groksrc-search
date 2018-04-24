@@ -2,6 +2,8 @@
 
 > groksrc search is a demo project that shows you how to set up [nuxt.js](http://nuxtjs.org) on [Firebase](https://firebase.google.com)
 
+Live Demo: https://search.groksrc.com or https://groksrc-nuxt-490a2.firebaseapp.com
+
 ## Things to know
 
 This nuxt.js issue was very helpful: https://github.com/nuxt/nuxt.js/issues/1634
