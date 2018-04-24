@@ -5,14 +5,22 @@
       h1(class="title") groksrc search
   .row.justify-content-center
     .col-8
-      form
-        .form-group
-          input(type="text" class="form-control" placeholder="Enter a search term")
+      .form-group
+        input(type="text" class="form-control" placeholder="Enter a search term" @keyup.enter="search")
   .row.justify-content-center
     .col-5.center
-      button.btn.btn-primary(type="button") Search
+      button.btn.btn-primary(type="button" @click="search") Search
       button.btn.btn-info.btn-lucky(type="button") I'm feeling lucky
 </template>
+<script>
+export default {
+  methods: {
+    search() {
+      window.location = '/results'
+    }
+  }
+}
+</script>
 <style>
 .title {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
