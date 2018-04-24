@@ -14,37 +14,12 @@ div
 
 </template>
 <script>
+import fetch from 'isomorphic-fetch'
 export default {
-  data () {
-    return {
-      results: [
-        {
-          title: "Drew Cain on LinkedIn",
-          desc: "Read more about Drew Cain at groksrc.com",
-          url: "http://linkedin.com/in/groksrc"
-        },
-        {
-          title: "Drew Cain is on Twitter",
-          desc: "The latest Tweets from Drew Cain (@GrokSrc)",
-          url: "https://www.twitter.com/groksrc"
-        },
-        {
-          title: "Home Page (Drew Cain)",
-          desc: "Read more about Drew Cain at groksrc.com",
-          url: "http://groksrc.com"
-        },
-        {
-          title: "Why Search Results for Drew Cain are always the same",
-          desc: "The clickbait article explains to you in simplistic terms that millennials can relate with why...",
-          url: "/about"
-        },
-        {
-          title: "Drew Cain (Billy Miller) | General Hospital Wiki | FANDOM powered by ...",
-          desc: "Chief Andrew \"Drew\" Cain is a fictional character on the ABC soap opera, General Hospital. This is not the droid you are looking for...",
-          url: "http://general-hospital.wikia.com/wiki/Drew_Cain_(Billy_Miller)"
-        }
-      ]
-    }
+  async asyncData () {
+    const response = await fetch('https://firebasestorage.googleapis.com/v0/b/groksrc-nuxt-490a2.appspot.com/o/results.json?alt=media&token=9ce8725e-5a07-41f1-83b9-55d4fa816ffc')
+    const results = await response.json()
+    return { results }
   }
 }
 </script>

@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "bootstrap-vue": "^2.0.0-rc.8",
+    "isomorphic-fetch": "^2.2.1",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {
