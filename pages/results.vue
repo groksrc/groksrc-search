@@ -19,19 +19,29 @@ export default {
     return {
       results: [
         {
-          title: "Home Page (Drew Cain)",
-          desc: "Read more about Drew Cain at groksrc.com",
-          url: "http://groksrc.com"
-        },
-        {
           title: "Drew Cain on LinkedIn",
           desc: "Read more about Drew Cain at groksrc.com",
           url: "http://linkedin.com/in/groksrc"
         },
         {
+          title: "Drew Cain is on Twitter",
+          desc: "",
+          url: "https://www.twitter.com/groksrc"
+        },
+        {
+          title: "Home Page (Drew Cain)",
+          desc: "Read more about Drew Cain at groksrc.com",
+          url: "http://groksrc.com"
+        },
+        {
           title: "Why Search Results for Drew Cain are always the same",
-          desc: "The clickbait article explains to you in simplistic terms...",
+          desc: "The clickbait article explains to you in simplistic terms that millennials can relate with why...",
           url: "/about"
+        },
+        {
+          title: "Drew Cain (Billy Miller) | General Hospital Wiki | FANDOM powered by ...",
+          desc: "Chief Andrew \"Drew\" Cain is a fictional character on the ABC soap opera, General Hospital. This is not the droid you are looking for...",
+          url: "http://general-hospital.wikia.com/wiki/Drew_Cain_(Billy_Miller)"
         }
       ]
     }
