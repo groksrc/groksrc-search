@@ -10,11 +10,14 @@
   .row.justify-content-center
     .col-5.center
       button.btn.btn-primary(type="button" @click="search") Search
-      button.btn.btn-info.btn-lucky(type="button") I'm feeling lucky
+      button.btn.btn-info.btn-lucky(type="button" @click="getLucky") I'm feeling lucky
 </template>
 <script>
 export default {
   methods: {
+    getLucky() {
+      window.location = 'http://worldsbiggestpacman.com/'
+    },
     search() {
       window.location = '/results'
     }
