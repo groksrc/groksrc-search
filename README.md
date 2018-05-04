@@ -14,19 +14,21 @@ This project does not follow the video. Instead inspiration is taken from [qm3st
 
 ## Getting Started
 
+Make sure you have the Firebase CLI installed. If you want to recreate this project from scratch you'll also need the Vue CLI tools.
 ``` bash
 # install external dependencies
-$ npm install -g vue-cli
 $ npm install -g firebase-tools
+$ npm install -g vue-cli # optional
+```
 
+```
 # install project dependencies
-$ yarn install # Or npm install
+$ yarn install # or npm install
 
 # serve with hot module reload at localhost:3000
 $ yarn dev
 
 # build for production and launch server
-
 $ yarn push
 ```
 
