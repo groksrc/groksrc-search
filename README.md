@@ -15,32 +15,41 @@ This project does not follow the video. Instead inspiration is taken from [qm3st
 ## Getting Started
 
 Make sure you have the Firebase CLI installed. If you want to recreate this project from scratch you'll also need the Vue CLI tools.
+
+### Setup
 ``` bash
 # install external dependencies
 $ npm install -g firebase-tools
 $ npm install -g vue-cli # optional
+$ git clone git@github.com:groksrc/groksrc-search.git
 ```
 
+### Install
 ```
 # install project dependencies
 $ yarn install # or npm install
 
-# serve with hot module reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn push
-```
-
-## Firebase Commands
-
-``` bash
 # before you deploy you must init the project with your firebase project to create a .firebaserc
 # NOTE: this command may overwrite firebase.json. Make sure that no important lines are lost
 $ firebase init
+```
 
-# run via firebase-tools
+### Run
+```
+# serve with hot module reload at localhost:3000
+$ yarn dev
+
+# compile for Firebase
+$ yarn package-functions
+
+# serve via the firebase cli to test locally
 $ firebase serve --only hosting,functions
+```
+
+### Publish
+```
+# build for production and push live
+$ yarn push
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
