@@ -52,4 +52,4 @@ $ firebase serve --only hosting,functions
 $ yarn push
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+For detailed explanation on how things work, checkout my [blog article about this project](https://medium.com/@groksrc/how-to-vue-ssr-with-nuxt-js-on-firebase-259b3cc1ba92).
